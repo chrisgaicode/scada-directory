@@ -11,7 +11,7 @@ export interface Integrator {
 
 export function getIntegrators() {
   // 1. Target the file in src/data/
-  const csvFilePath = path.join(process.cwd(), 'src', 'data', 'Integrators.csv');
+  const csvFilePath = path.join(process.cwd(), 'tools', 'Integrators.csv');
   
   console.log(`[Data Load] Reading from: ${csvFilePath}`);
 
