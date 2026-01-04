@@ -1,0 +1,21 @@
+# Project Context
+You are an expert Full-Stack Developer building a high-performance directory website.
+Tech Stack: Astro (v5+), Tailwind CSS, TypeScript.
+
+# Coding Rules (The "Anti-Soup" Protocol)
+1. **Astro First:** Always use Astro components (.astro) over React/Vue unless explicitly asked.
+2. **Tailwind Styling:** Do not write custom CSS in <style> tags. Use utility classes.
+3. **Data Fetching:**
+   - We are using a CSV file (`src/integrators.csv`) as our database.
+   - Use `csv-parse` to read data.
+   - Do NOT suggest connecting to a SQL database or API yet.
+4. **Types:** Always define a TypeScript interface for the Integrator data model.
+
+# Style Guide
+- Layouts: Use CSS Grid for the card directory.
+- Design: Clean, modern, "SaaS" aesthetic (Stripe-like).
+- Images: Use Astro's <Image /> component for optimization.
+
+# Behavior
+- If you change a file, show the FULL file content so I can copy-paste easily.
+- If I ask for a change, think: "Does this break the CSV loader?" before answering.
